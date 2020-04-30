@@ -26,7 +26,7 @@ class TrackerController < ApplicationController
   private 
 
   def tracker_params
-    params.require(:user).permit(:title, :company, :description, :search_date, :start_date, :app_sent)
+    params.require(:tracker).permit(:title, :company, :description, :user_id)
   end
 
   
