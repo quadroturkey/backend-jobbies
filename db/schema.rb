@@ -42,9 +42,6 @@ ActiveRecord::Schema.define(version: 2020_04_27_161103) do
     t.string "title"
     t.string "company"
     t.string "description"
-    t.date "search_date"
-    t.date "start_date"
-    t.date "app_sent"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
