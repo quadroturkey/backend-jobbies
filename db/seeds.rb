@@ -16,13 +16,13 @@
 # end
 
 User.create(
-  username: 'reese',
-  password: 'aaa',
+  username: 'r',
+  password: 'r',
   bio: Faker::GreekPhilosophers.quote,
   avatar: Faker::Avatar.image
 )
 
-5.times do 
+20.times do 
   Tracker.create(
     user_id: 1,
     title: Faker::Company.profession,

@@ -21,6 +21,10 @@ class TrackerController < ApplicationController
   end
 
   def destroy
+    @tracker = Tracker.find(params[:id])
+    @tracker.destroy
+    @tracker = Tracker.all
+    render json: @tracker
   end
 
   private 
