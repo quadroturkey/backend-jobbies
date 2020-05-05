@@ -42,6 +42,9 @@ ActiveRecord::Schema.define(version: 2020_04_27_161103) do
     t.string "title"
     t.string "company"
     t.string "description"
+    t.date "application_date"
+    t.date "follow_up_date"
+    t.boolean "offer_received"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

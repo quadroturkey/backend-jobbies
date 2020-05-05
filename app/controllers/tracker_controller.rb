@@ -18,6 +18,11 @@ class TrackerController < ApplicationController
   end
 
   def update
+    puts "=====update======"
+    @tracker = Tracker.find(params[:id])
+    puts @tracker
+    @tracker.update(tracker_params)
+    puts @tracker
   end
 
   def destroy
@@ -30,8 +35,7 @@ class TrackerController < ApplicationController
   private 
 
   def tracker_params
-    params.require(:tracker).permit(:title, :company, :description, :user_id)
+    params.require(:tracker).permit(:title, :company, :description, :user_id, :application_date, :follow_up_date, :offer_received)
   end
-
   
 end

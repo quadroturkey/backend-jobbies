@@ -22,13 +22,13 @@ User.create(
   avatar: Faker::Avatar.image
 )
 
-20.times do 
-  Tracker.create(
-    user_id: 1,
-    title: Faker::Company.profession,
-    company: Faker::Company.name,
-    description: Faker::Company.bs
-  )
-end
+# 20.times do 
+#   Tracker.create(
+#     user_id: 1,
+#     title: Faker::Company.profession,
+#     company: Faker::Company.name,
+#     description: Faker::Company.bs
+#   )
+# end
 
 
