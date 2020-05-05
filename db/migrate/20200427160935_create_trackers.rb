@@ -5,6 +5,9 @@ class CreateTrackers < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :company
       t.string :description
+      t.date :application_date
+      t.date :follow_up_date
+      t.boolean :offer_received
 
       t.timestamps
     end
