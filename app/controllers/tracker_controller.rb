@@ -18,11 +18,8 @@ class TrackerController < ApplicationController
   end
 
   def update
-    puts "=====update======"
     @tracker = Tracker.find(params[:id])
-    puts @tracker
     @tracker.update(tracker_params)
-    puts @tracker
   end
 
   def destroy
